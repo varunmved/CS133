@@ -22,14 +22,13 @@ public class Starter {
         }
     }
 
+    //other methods
     public void start() {
         if(current != null){
             current.show();
             return;
         }
-        Form hi = new Form("Hi World");
-        hi.addComponent(new Label("Hi World"));
-        hi.show();
+        new Game();
     }
 
     public void stop() {
