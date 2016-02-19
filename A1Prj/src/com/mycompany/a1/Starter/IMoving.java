@@ -6,4 +6,5 @@ package com.mycompany.a1.Starter;
 public interface IMoving {
     //fuck if i know lmao
 
+
 }

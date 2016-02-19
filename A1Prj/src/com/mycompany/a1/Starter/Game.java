@@ -25,6 +25,7 @@ public class Game extends Form {
     */
     private void play()
     {
+        //fuck this shitty thing i might have to change it to addComponent
         Label myLabel=new Label("Enter a Command:");
         this.add(myLabel);
         final TextField myTextField=new TextField();
