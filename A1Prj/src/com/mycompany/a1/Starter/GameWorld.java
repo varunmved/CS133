@@ -16,72 +16,11 @@ public class GameWorld {
     // manipulate world objects and
     // related game state data
 
-    public abstract class GameObject extends GameWorld {
-        //location shit, fix this later
-        private double locationX = 0.00;
-        private double locationY = 0.00;
-       
-        private double[] location = new double[2];
-        private final int size = 0;
-
-
-        //color
-        private int color = ColorUtil.rgb(0,0,0);
-
-        //moving or guided
-        private boolean isMoving = false;
-        private boolean isGuided = false;
-
-        public void setColor(int rgbIn)
-        {
-            color = rgbIn;
-        }
-        
-        public void setLocation(double x, double y)
-        {
-            location[x] = x;
-            location[y] = y;
-        }
-        
-        public void getColor()
-        {
-            return color;
-        }
-        
-        public void getLocation()
-        {
-            return location;
-        }
-
-        public void getSize()
-        {
-            return size;
-        }
-
-        //abstract methods
-        public abstract void moveUp();
-        public abstract void moveDown();
-        public abstract void moveRight();
-        public abstract void moveLeft();
-        public abstract boolean jumpToCat();
-        public abstract boolean jumpToDog();
-
-
-    }
-
-    abstract class Animal extends GameObject implements IMoving {
-        private double speed = 0.00;
-        private int direction = 0.00;
-        
-
-
-    }
 
     abstract class Catcher extends GameObject implements IGuided{
         private int size = 100;
 
 
     }
-
 
 }
