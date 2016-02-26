@@ -17,10 +17,5 @@ public class GameWorld {
     // related game state data
 
 
-    abstract class Catcher extends GameObject implements IGuided{
-        private int size = 100;
-
-
-    }
 
 }

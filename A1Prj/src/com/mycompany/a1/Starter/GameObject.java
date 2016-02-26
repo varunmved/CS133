@@ -66,6 +66,7 @@ import java.util.Vector;
             location.set(0,y);
         }
 
+        /*
         //abstract methods
         public abstract void moveUp();
         public abstract void moveDown();
@@ -73,6 +74,7 @@ import java.util.Vector;
         public abstract void moveLeft();
         public abstract boolean jumpToCat();
         public abstract boolean jumpToDog();
+        */
 
 
     }

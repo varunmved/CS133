@@ -1,5 +1,9 @@
 package com.mycompany.a1.Starter;
 import com.codename1.ui.Form;
+import com.codename1.ui.TextField;
+import com.codename1.ui.events.ActionEvent;
+import com.codename1.ui.events.ActionListener;
+import com.codename1.ui.Label;
 
 /**
  * Created by Varun on 2/16/16.
@@ -17,7 +21,7 @@ public class Game extends Form {
     {
         //fuck this shitty thing i might have to change it to addComponent
         Label myLabel=new Label("Enter a Command:");
-        this.add(myLabel);
+        this.addComponent(myLabel);
         final TextField myTextField=new TextField();
         this.addComponent(myTextField);
         this.show();
