@@ -5,6 +5,7 @@ import com.codename1.ui.events.ActionEvent;
 import com.codename1.ui.events.ActionListener;
 import com.codename1.ui.Label;
 
+
 /**
  * Created by Varun on 2/16/16.
  */
@@ -32,12 +33,12 @@ public class Game extends Form {
                   myTextField.clear();
                   switch (sCommand.charAt(0)) {
                       case 'e':
-                          gw.netExpand();
+                          gw.expandNet();
                           break;
                       //add code to handle rest of the commands
                       case 'c':
                           System.out.print("Net has been decreased\n");
-                          gw.netDecrease();
+                          gw.decreaseNet();
                           break;
                       case 's':
                           System.out.print("Animals in net scooped\n");
@@ -61,7 +62,7 @@ public class Game extends Form {
                           break;
                       case 'k':
                           System.out.print("Cat added\n");
-                          gw.catPopulate();
+                          gw.populateCats();
                           break;
                       case 'f':
                           System.out.print("Fight occurred!\n");

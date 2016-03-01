@@ -6,7 +6,7 @@ package com.mycompany.a1.Starter;
 public class Net extends Catcher {
     public String toString()
     {
-        String parentDesc = super.toString();
+
         String myDesc = ("Net: "+ "loc = " + getX() + ", " + getY() + ", color = " + getColor() + ", size = " + getSize());
         return myDesc;
 

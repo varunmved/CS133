@@ -1,4 +1,5 @@
 package com.mycompany.a1.Starter;
+import java.util.Random;
 
 /**
  * Created by Varun on 2/25/16.
@@ -7,10 +8,10 @@ public abstract class Animal extends GameObject implements IMoving {
     private int speed = 0;
     private int direction = 0;
 
-    public Animal() {
+   /* public Animal() {
         //just need this here for compiling?
         //lol wtf is java
-    }
+    }*/
 
     //get
     public int getSpeed() {
@@ -48,6 +49,9 @@ public abstract class Animal extends GameObject implements IMoving {
         //todo- logic
         //why the hell is that syntax highlighted?
         //nick_young_wat.jpg
+        if( newLocationX < 1024-(this.getSize()/2) && newLocationX > (this.getSize()/2) && newLocationY < 1024-(this.getSize()/2) && newLocationY > (this.getSize()/2)){
+            setLocation(newLocationX,newLocationY);
+        }
 
 
     }

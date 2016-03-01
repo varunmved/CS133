@@ -16,6 +16,8 @@ public class Catcher extends GameObject implements IGuided {
         x = getX();
         y = getY();
 
+        setLocation(x,y);
+
     }
 
     public void moveDown()
@@ -24,6 +26,9 @@ public class Catcher extends GameObject implements IGuided {
 
         x = getX();
         y = getY();
+
+        setLocation(x,y);
+
 
     }
 
@@ -34,6 +39,8 @@ public class Catcher extends GameObject implements IGuided {
         x = getX();
         y = getY();
 
+        setLocation(x,y);
+
     }
 
     public void moveRight() {
@@ -41,6 +48,9 @@ public class Catcher extends GameObject implements IGuided {
 
         x = getX();
         y = getY();
+
+        setLocation(x,y);
+
 
     }
 

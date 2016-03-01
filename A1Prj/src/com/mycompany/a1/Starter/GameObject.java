@@ -6,9 +6,8 @@ import java.util.Vector;
  * Created by Varun on 2/25/16.
  */
 
-    public abstract class GameObject extends GameWorld {
+    public abstract class GameObject{
 
-        //location shit, fix this later
         //should i use a touple.. or a 2d array?
         /*
         private double locationX = 0.00;
@@ -29,7 +28,7 @@ import java.util.Vector;
 
         public GameObject()
         {
-            location = new Vector<Double>();
+            location = new Vector<>();
             location.setSize(2);
         }
 
@@ -63,9 +62,20 @@ import java.util.Vector;
         public void setLocation(double x, double y)
         {
             location.set(0,x);
-            location.set(0,y);
+            location.set(1,y);
         }
 
+        public void setSize(int size)
+        {
+            this.size = size;
+        }
+
+        public String toString()
+        {
+        String myDesc = "super";
+        return myDesc;
+
+    }
         /*
         //abstract methods
         public abstract void moveUp();
